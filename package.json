@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --env.dev",
+    "dev": "webpack-dev-server --env.dev --history-api-fallback",
     "start": "webpack -p --env.production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -37,6 +37,7 @@
     "redux": "^3.6.0",
     "redux-logger": "^3.0.1",
     "redux-persist": "^4.7.1",
+    "redux-router": "^2.1.2",
     "redux-saga": "^0.15.0",
     "reduxsauce": "^0.5.0",
     "sass-loader": "^6.0.3",
@@ -44,5 +45,11 @@
     "style-loader": "^0.16.1",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "react-bootstrap": "^0.31.0",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-spinkit": "^3.0.0"
   }
 }
